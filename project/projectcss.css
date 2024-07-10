@@ -1,0 +1,321 @@
+*{
+    --bubblegum:#FFC1CC;
+    --chocolate:#7B3F00;
+    --Mauve:#C9B1FF;
+    --Shampoo:#FFCAF2;
+    --Melon:#FFB2B1;
+    --Banana-Mania:#FFF3AD;
+    --Tea-Green:#BCFFBC;
+    --Fresh-Air:#A2EDFF;
+    --light-yellow:#FFFFE3;
+    --greyish-white:#d6dee9;
+    --dark-grey:#222222;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size:5rem;
+    
+    
+}
+body{
+    background-image: url("htmlheader.jpg");
+    background-color: var(--light-yellow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home,.about,.shop,.menu,.you{
+    margin-top: 33%;
+    align-content: center;
+    margin-left: 11%;
+    padding:10px;
+    width:6.5%;
+    appearance: none;
+    outline:none;
+    background: none;
+    border: none;
+    /*border:0.5px solid var(--greyish-white);*/
+    border-radius: 25%;
+    font-size: 1.3rem;
+    font-weight:1000;
+    background-image: linear-gradient(to right,var(--Melon),var(--Melon),var(--Fresh-Air),var(--Fresh-Air));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    transition: all 0.4s;
+    
+}
+.home:hover,.about:hover,.shop:hover,.menu:hover,.you:hover{
+    font-size: 1.1rem;
+}
+.home::-webkit-resizer{
+    font-size:large;
+}
+/*
+.ribbon{    
+    background-image:url("ribbon.jpg");
+    background-size:cover;
+    border: 2px solid var(--greyish-white);
+    height:30px;
+}*/
+#companyname{
+    margin-left: 2rem;
+    margin-top: 1px;
+    font-size:3rem;
+}
+.login{
+    border-radius: 2rem;
+    border: #222222 1px;
+    background:white ;
+    background-image: url('login.png');
+    background-size:1rem;
+    background-position: bottom;
+    background-position: left;
+    background-position-x: 0.5rem;
+    background-repeat: no-repeat;
+    padding: 0.6rem;
+    width:6rem;
+    float: right;
+    margin-top: 0.4rem;
+    margin-right:0.5rem;
+    font-weight:300;
+    font-size:1rem;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width:0.2px;
+    color: var(--dark-grey);
+    position: static;
+}
+.login:hover{
+    background-color: var(--greyish-white);
+}
+.login:active{
+    background-color: rgb(160, 160, 160);
+}
+.welcome{
+  float:right;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.frame{
+    position:absolute;
+    left: 50%;
+    top: 50%; 
+    display:none;
+    transform: translate(-50%, -50%); 
+    width: 26rem;
+    height: 29rem;
+    
+    
+}
+.frame #popupFrame{
+    position:absolute;
+    overflow:auto;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 2rem;
+}
+
+.frame .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 2rem;
+    color: black;
+    border-radius: 5px;
+  }
+  .close-btn:hover{
+    background-color:#ff3f3f;
+    color: #fff;
+    
+  }
+  .close-btn:active{
+    background-color: #ae0404;
+    color:white;
+
+  }
+  .navigate{
+    padding-bottom: 3rem;
+  }
+  .intro{
+    margin: 4rem;
+    font-size: 1.3rem;
+    margin-right: 5%;    
+  }
+  .bg1{
+    background-color: #BCFFBC;
+    padding-top: 1%;
+    margin-right: 15%;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+  }
+  .icecream{
+    margin: 4rem;
+    font-size: 1.3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+  }
+ .head2{
+    float: right;
+    font-size: 1.5rem;
+  }
+  .bg2{
+    background-color: #FFB2B1;
+    padding-top: 1%;
+    margin-left: 15%;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
+  .sundae{
+    margin: 4rem;
+    font-size: 1.3rem;
+    margin-right: 5%;    
+  }
+  .head3{
+    float: left;
+    font-size: 1.5rem;
+  }
+  .bg3{
+    background-color: #C9B1FF;
+    padding-top: 1%;
+    margin-right: 15%;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
+  .desserts{
+    margin: 4rem;
+    font-size: 1.3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+  }
+ .head4{
+    float: right;
+    font-size: 1.5rem;
+    margin-right: 1%;
+  }
+  .bg4{
+    background-color: #FFCAF2;
+    padding-top: 1%;
+    margin-left: 15%;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
+  .cones{
+    margin: 4rem;
+    font-size: 1.3rem;
+    margin-right: 5%;    
+  }
+  .head5{
+    float: left;
+    font-size: 1.5rem;
+  }
+  .bg5{
+    background-color: rgb(254, 99, 99);
+    padding-top: 1%;
+    margin-right: 15%;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
+  .service{
+    margin: 4rem;
+    font-size: 1.3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+  }
+ .head6{
+    float: right;
+    font-size: 1.5rem;
+    margin-right: 1%;
+  }
+  .bg6{
+    background-color: rgb(148, 232, 255);
+    padding-top: 1%;
+    margin-left: 15%;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
+  .loyalty{
+    margin: 4rem;
+    font-size: 1.3rem;
+    margin-right: 5%;    
+  }
+  .head7{
+    float: left;
+    font-size: 1.5rem;
+  }
+  .bg7{
+    background-color: rgb(179, 114, 46);
+    padding-top: 1%;
+    margin-right: 15%;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
+  .footer{
+    font-size: 1rem; 
+    color: #fff;
+    padding: 2rem;  
+  }
+  .bgfoot{
+    background-color: #4e4e4e;
+    padding-top: 1%;
+    padding-bottom: 1rem;
+    margin-top: 3%;
+  }
+  .headfoot{
+    font-size: 1.5rem;
+  }
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 999;
+}
+
+#popupFrame {
+    pointer-events: auto; /* This ensures the iframe is clickable */
+}
+
+.disable-interaction {
+    pointer-events: none;
+}
+.disable-scroll {
+  overflow: hidden;
+}
